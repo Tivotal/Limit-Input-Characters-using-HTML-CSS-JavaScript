@@ -1,0 +1,86 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "POppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.input-box {
+  position: relative;
+  height: 160px;
+  width: 100%;
+  max-width: 560px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-box textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  resize: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 25px 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.input-box textarea::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input-box textarea:focus,
+.input-box textarea:valid {
+  border-color: #4070f4;
+}
+
+.input-box.error textarea {
+  border-color: red;
+}
+
+.input-box .title {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  color: #4070f4;
+}
+
+.input-box.error .title {
+  color: red;
+}
+
+.input-box .nums {
+  position: absolute;
+  bottom: 35px;
+  right: 45px;
+  font-size: 14px;
+  color: #4070f4;
+  display: none;
+}
+
+.input-box.active .nums {
+  display: block;
+}
+
+.input-box.error .nums {
+  color: red;
+}
